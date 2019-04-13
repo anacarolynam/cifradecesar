@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Ana Cifra de Cesar</title>
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">CesarCipher</h1>
+        <!-- <hr class="my-4"> -->
+    </div>
+    <!-- <form> -->
+        <div class="container form-group col-md-4">
+            <label>Texto:</label>
+            <input placeholder="Insira o texto desejado" type="text" class="form-control" id="palavra">
+        </div>
+        <div class="container form-group col-md-4">
+            <label>Chave</label>
+            <input type="number" id="chavecifra" placeholder="Insira a Chave" class="form-control">
+        </div>
+    <!-- </for> -->
+    <button class="big" onclick="cifrar()">Encrypt</button>
+    <br>
+    <br>
+    <button class="big" onclick="decifrar()">Descrypt</button>
+
+    <div class="row-col card w-100">
+        <div class="container form-group col-md-4">
+            <label for=""></label>
+            <input type="text" class="form-control" id="criptografia" value=" ">
+        </div>
+        <div class="container form-group col-md-4">
+            <label for=""></label>
+            <input type="text" class="form-control" id="descriptografia" value=" ">
+        </div>
+    </div>
+    
+</body>
+<script src="cifra.js"></script>
+</html>
